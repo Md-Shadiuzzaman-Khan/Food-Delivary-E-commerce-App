@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivary_app/utils/colors.dart';
 import 'package:food_delivary_app/widgets/big_text.dart';
+import 'package:food_delivary_app/widgets/small_text.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
         children: [
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45, bottom: 15),
+              margin: EdgeInsets.only(top: 50, bottom: 15),
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -26,7 +27,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
                   Column(
                     children: [
                       Bigtext(text: "Bangladesh", color: AppColors.mainColor,),
-                      Text("City"),
+                      Row(
+                        children: [
+                          SmallText(text: "Dhaka", color: Colors.black54,),
+                          Icon(Icons.arrow_drop_down_rounded),
+                        ],
+                      ),
                     ],
                   ),
                   Center(
