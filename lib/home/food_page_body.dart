@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
+=======
+>>>>>>> origin/master
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
@@ -9,6 +12,7 @@ class FoodPageBody extends StatefulWidget {
 }
 
 class _FoodPageBodyState extends State<FoodPageBody> {
+<<<<<<< HEAD
   PageController pageController = PageController(viewportFraction: 0.85);
   @override
   Widget build(BuildContext context) {
@@ -16,11 +20,18 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       color: Colors.blueGrey,
       height: 320,
       child: PageView.builder(controller: pageController, itemCount: 5, itemBuilder: (context, position){
+=======
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: PageView.builder(itemCount: 5, itemBuilder: (context, position){
+>>>>>>> origin/master
         return _buildPageItem(position);
       }),
     );
   }
   Widget _buildPageItem(int index){
+<<<<<<< HEAD
     return Stack(
       children: [
         Container(
@@ -49,6 +60,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
       ],
+=======
+    return Container(
+
+>>>>>>> origin/master
     );
   }
 }
